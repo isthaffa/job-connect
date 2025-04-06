@@ -22,18 +22,6 @@ const Login = () => {
     password: '',
   });
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle login logic here
-    console.log('Login form submitted:', formData);
-  };
 
   return (
     <MainLayout hideFooter>

@@ -1,4 +1,4 @@
-import { Badge, BookmarkPlus, Briefcase, Clock, CreditCard, MapPin } from 'lucide-react';
+import { BookmarkPlus, Briefcase, Clock, CreditCard, MapPin } from 'lucide-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../ui/button';
@@ -11,6 +11,7 @@ import {
   CardTitle
 } from "../ui/card";
 
+import { Badge } from '../../components/ui/Badge';
 
 // Mock data for featured jobs
 const featuredJobs = [

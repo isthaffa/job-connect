@@ -1,6 +1,7 @@
-import { Badge, BookOpen, Clock, Star, Users } from 'lucide-react';
+import { BookOpen, Clock, Star, Users } from 'lucide-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Badge } from '../../components/ui/Badge';
 import { Button } from '../ui/button';
 import {
   Card,
@@ -10,6 +11,7 @@ import {
   CardHeader,
   CardTitle
 } from "../ui/card";
+
 // Mock data for popular courses
 const popularCourses = [
   {
