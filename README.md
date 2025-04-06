@@ -1,6 +1,6 @@
 # Job Application Platform
 
-A modern, responsive job application platform built with React, TypeScript, and Tailwind CSS. This platform allows users to browse job listings, apply for positions, and manage their applications.
+A modern, responsive job application platform built with React and Tailwind CSS. This platform allows users to browse job listings, apply for positions, and manage their applications.
 
 ## Features
 
