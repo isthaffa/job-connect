@@ -101,3 +101,103 @@ export const UserRole = {
     createdAt: ''
   };
   
+
+
+export const MentorshipStatus = {
+  SCHEDULED: 'SCHEDULED',
+  IN_PROGRESS: 'IN_PROGRESS',
+  COMPLETED: 'COMPLETED',
+  CANCELLED: 'CANCELLED'
+};
+
+export const SessionStatus = {
+  SCHEDULED: 'SCHEDULED',
+  COMPLETED: 'COMPLETED',
+  CANCELLED: 'CANCELLED'
+};
+
+// Shape definitions (interfaces converted to object shapes)
+export const JobShape = {
+  id: String,
+  title: String,
+  company: Object, // Company shape would be defined separately
+  location: String,
+  type: String, // JobType
+  description: String,
+  requirements: Array,
+  responsibilities: Array,
+  salary: Object, // SalaryRange shape
+  postedAt: String,
+  deadline: String,
+  status: String, // JobStatus
+  applicationsCount: Number
+};
+
+export const SalaryRangeShape = {
+  min: Number,
+  max: Number,
+  currency: String
+};
+
+export const JobApplicationShape = {
+  id: String,
+  job: Object, // Job shape
+  resume: Object, // Resume shape
+  status: String, // ApplicationStatus
+  appliedAt: String,
+  candidate: Object // JobSeeker shape (optional)
+};
+
+export const CourseShape = {
+  id: String,
+  title: String,
+  description: String,
+  category: String,
+  level: String, // CourseLevel
+  duration: Number,
+  materials: Array, // Array of CourseMaterial
+  price: Number,
+  currency: String,
+  createdAt: String,
+  enrolledStudents: Number,
+  thumbnail: String,
+  trainer: Object // Trainer shape
+};
+
+export const CourseMaterialShape = {
+  id: String,
+  title: String,
+  type: String, // MaterialType
+  url: String
+};
+
+export const MentorshipShape = {
+  id: String,
+  title: String,
+  description: String,
+  trainer: Object, // Trainer shape
+  student: Object, // JobSeeker shape
+  status: String, // MentorshipStatus
+  startDate: String,
+  endDate: String,
+  sessions: Array // Array of MentorshipSession
+};
+
+export const MentorshipSessionShape = {
+  id: String,
+  title: String,
+  description: String,
+  date: String,
+  duration: Number,
+  status: String, // SessionStatus
+  notes: String
+};
+
+export const AdminStatsShape = {
+  totalUsers: Number,
+  totalJobs: Number,
+  totalCourses: Number,
+  totalApplications: Number,
+  newUsersThisMonth: Number,
+  newJobsThisMonth: Number
+};

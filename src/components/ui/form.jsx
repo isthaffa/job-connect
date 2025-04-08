@@ -1,9 +1,9 @@
 import { Slot } from "@radix-ui/react-slot"
 import React, { createContext, forwardRef, useContext, useId } from "react"
 import {
-    Controller,
-    FormProvider as RHFFormProvider,
-    useFormContext,
+  Controller,
+  FormProvider as RHFFormProvider,
+  useFormContext,
 } from "react-hook-form"
 
 import { Label } from "../../components/ui/label"
@@ -60,7 +60,7 @@ const FormLabel = forwardRef(({ className, ...props }, ref) => {
   return (
     <Label
       ref={ref}
-      className={cn(error && "text-destructive", className)}
+      className={cn(error && "text-destructive text-[#880808]", className)}
       htmlFor={formItemId}
       {...props}
     />
@@ -109,7 +109,7 @@ const FormMessage = forwardRef(({ className, children, ...props }, ref) => {
     <p
       ref={ref}
       id={formMessageId}
-      className={cn("text-sm font-medium text-destructive", className)}
+      className={cn("text-sm font-medium text-destructive text-[#880808]", className)}
       {...props}
     >
       {body}
@@ -119,8 +119,8 @@ const FormMessage = forwardRef(({ className, children, ...props }, ref) => {
 FormMessage.displayName = "FormMessage"
 
 export {
-    Form, FormControl,
-    FormDescription, FormField, FormItem,
-    FormLabel, FormMessage, useFormField
+  Form, FormControl,
+  FormDescription, FormField, FormItem,
+  FormLabel, FormMessage, useFormField
 }
 

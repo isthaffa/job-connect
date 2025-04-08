@@ -15,6 +15,7 @@ import QuickTips from './components/QuickTips';
 
 // Utils imports
 import { toast } from 'sonner';
+import JobChatbot from '../../components/help/JobChatbot';
 import { calculateDaysRemaining, formatDate } from '../../lib/dateUtils';
 import { mockJobs } from './data/mockjobs';
 
@@ -98,6 +99,8 @@ const JobDetail = () => {
           jobTitle={job.title}
           companyName={job.company.name}
         />
+
+        <JobChatbot job={job} />
       </div>
     </MainLayout>
   );
