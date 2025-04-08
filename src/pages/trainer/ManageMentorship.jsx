@@ -1,8 +1,11 @@
-import { Avatar, AvatarFallback } from "@radix-ui/react-avatar";
 import { format } from 'date-fns';
 import { Calendar, Clock, Plus, Search, User, Video } from 'lucide-react';
 import React, { useState } from 'react';
 import MainLayout from '../../components/layout/main-layout';
+import {
+    Avatar,
+    AvatarFallback
+} from "../../components/ui/avatar";
 import { Badge } from "../../components/ui/Badge";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card";

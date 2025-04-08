@@ -1,9 +1,12 @@
-import { Avatar, AvatarFallback } from "@radix-ui/react-avatar";
 import { formatDistanceToNow } from 'date-fns';
 import { BookOpen, Calendar, Clock, Users } from 'lucide-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MainLayout from '../../components/layout/main-layout';
+import {
+    Avatar,
+    AvatarFallback
+} from "../../components/ui/avatar";
 import { Badge } from '../../components/ui/Badge';
 import { Button } from '../../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card";

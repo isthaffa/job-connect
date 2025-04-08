@@ -9,7 +9,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage
-} from "@radix-ui/react-avatar";
+} from "../../components/ui/avatar";
 
 import {
   DropdownMenu,
@@ -18,7 +18,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger
-} from "@radix-ui/react-dropdown-menu";
+} from "../../components/ui/dropdown-menu";
 
 
 const Navbar = ({ userRole }) => {
